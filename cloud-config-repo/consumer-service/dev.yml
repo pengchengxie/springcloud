@@ -1,0 +1,18 @@
+spring:
+  redis:
+    cluster:
+      nodes: 192.168.10.33:7000,192.168.10.33:7001,192.168.10.33:7002,192.168.10.33:7003,192.168.10.33:7004,192.168.10.33:7005
+      timeout: 2000
+      max-redirects: 7
+
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.10.34:3306/market_personas?useUnicode=true&amp;noDatetimeStringSync=true&amp;characterEncoding=utf8
+    username: appuser
+    password: appuser123
+  data:
+    mongodb:
+      uri: mongodb://admin:password@192.168.10.29:27023/market_personas?authSource=admin
+swagger:
+  ui:
+    enable: true
