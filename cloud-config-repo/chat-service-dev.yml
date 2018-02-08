@@ -12,7 +12,7 @@ spring:
     password: appuser123
   data:
     mongodb:
-      uri: mongodb://admin:password@192.168.10.29:27023/market_personas?authSource=admin
+      uri: mongodb://admin:password@192.168.10.29:27023/nlp_chat?authSource=admin
 swagger:
   ui:
     enable: true
